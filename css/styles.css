@@ -114,7 +114,7 @@ button {
 /*Hero section start*/
 
 .hero-banner {
-  background-image: url(/images/herro-banner.jpg);
+  background-image: url(../images/herro-banner.jpg);
   width: 1136px;
   height: 600px;
   background-size: contain;
