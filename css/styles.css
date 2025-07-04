@@ -2,16 +2,6 @@
   font-family: "Montserrat", Helvetica;
 }
 
-ul,
-li {
-  list-style-type: none;
-}
-
-a {
-  text-decoration: none;
-  color: black;
-}
-
 h1,
 h2,
 h3,
@@ -24,6 +14,61 @@ a {
   margin-top: 0;
   margin-bottom: 0;
 }
+
+ul,
+li {
+  list-style-type: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.container {
+  width: 1136px;
+  padding-left: 32px;
+  padding-right: 32px;
+  margin: 0 auto;
+}
+
+.hero-banner-title,
+.bottom-title {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 121%;
+}
+
+.review-button,
+.review-list-item-title,
+.recipe-subtitle-list-item-text,
+.taste-list-item-text,
+.recipe-subtitle {
+  color: #111111;
+}
+
+.button-primary:hover,
+.button-secondary:hover,
+.taste-higlight {
+  color: #fd9222;
+}
+
+.button-primary:hover {
+  background-color: #fcf1e0;
+}
+
+.bottom-navigation-list-item-anchor,
+.bottom-contacts-adress-list-item,
+.bottom-title,
+.review-list-item-subtitle,
+.recipe-subtitle-list-item-text,
+.taste-subtitle,
+.taste-list-item-text,
+.benefits-list-item-text {
+  letter-spacing: -0.02em;
+}
+
 button {
   cursor: pointer;
 }
@@ -37,52 +82,38 @@ button {
   border: none;
 }
 
-.button-primary {
-  background-color: #fd9222;
-}
-
 .button-secondary {
   background-color: transparent;
   border: #ffff solid 1px;
 }
 
-.button-primary:hover {
-  background-color: #fcf1e0;
-}
-
-.button-primary:hover,
-.button-secondary:hover,
-.taste-higlight {
-  color: #fd9222;
-}
-
-.button-primary,
-.button-secondary,
+.bottom-contacts-adress-list-item-number,
+.bottom-contacts-adress-list-item-mail,
+.bottom-contacts-title,
+.bottom-title,
+.bottom-navigation-list-item-anchor,
+.bottom-contacts-adress-list-item,
+.white-text,
+.benefits-title,
 .hero-banner-title,
 .hero-banner-button-scroll,
-.benefits-title,
-.white-text,
-.bottom-contacts-address-list-item,
-.bottom-navigation-list-item-anchor,
-.bottom-contacts-address-list-number,
-.bottom-contacts-address-list-mail,
-.bottom-contacts-title,
-.bottom-title {
-  color: #ffff;
+.button-secondary,
+.button-primary {
+  color: #fff;
 }
 
-.hero-banner-title,
-.bottom-title {
-  font-weight: 500;
-  font-size: 28px;
-  line-height: 121%;
-}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
 
-.container {
-  width: 1136px;
-  padding-left: 32px;
-  padding-right: 32px;
-  margin: 0 auto;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /*Navigation section start*/
@@ -94,6 +125,11 @@ button {
   letter-spacing: -0.1px;
   line-height: 20px;
   text-transform: uppercase;
+  flex-grow: 1;
+}
+
+.choko-logo {
+  margin-left: 4px;
 }
 
 .header-navigation-logo-italic {
@@ -101,6 +137,34 @@ button {
 }
 
 .header {
+  margin: 26px 0 34px 0;
+}
+
+.header-navigation-direction {
+  display: flex;
+  align-items: center;
+}
+
+.header-navigation-direction ul {
+  display: flex;
+}
+
+.header-navigation-menu {
+  gap: 24px;
+  margin-right: 90px;
+}
+
+.header-navigation-menu li {
+  font-weight: 500px;
+}
+
+.header-navigation-social {
+  gap: 18px;
+}
+
+.social-icons {
+  stroke: #111;
+  fill: transparent;
 }
 
 .header-navigation {
@@ -122,18 +186,37 @@ button {
   margin-bottom: 72px;
 }
 
+.hero-banner-content {
+  padding: 381px 40px 40px 40px;
+}
+
+.hero-banner-content-buttons {
+  display: flex;
+  align-content: center;
+}
+
+.hero-banner-content-buttons div:first-child {
+  flex-grow: 1;
+  display: flex;
+  gap: 14px;
+}
+
 .hero-banner-title {
   letter-spacing: -0.03em;
   max-width: 484px;
   margin-bottom: 32px;
 }
 
-.hero-banner-content {
-  padding: 381px 40px 40px 40px;
+.hero-banner-button-scroll {
+  display: flex;
+  align-items: center;
+  gap: 14px;
 }
 
-.hero-banner-button-scroll {
-  padding-left: 585px;
+.hero-banner-button-scroll span {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  flex-basis: content;
 }
 
 /*Hero section end*/
@@ -143,25 +226,40 @@ button {
 .benefits {
   background-color: #1e1823;
 }
+
+.benefits .container {
+  display: flex;
+  flex-basis: calc((100% - 2 * 88px) / 3);
+}
+
 .benefits-list {
   padding: 50px;
+  display: flex;
+  gap: 88px;
 }
 .benefits-list-item {
 }
+
 .benefits-list-item-image {
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 365px;
   padding: 15px;
 }
+
 .benefits-title {
-  font-weight: 600;
-  font-size: 18px;
   padding-bottom: 18px;
   padding-top: 22px;
 }
+
+.benefits-title,
+.review-list-item-title,
+.recipe-subtitle {
+  font-weight: 600;
+  font-size: 18px;
+}
+
 .benefits-list-item-text {
   font-size: 14px;
-  letter-spacing: -0.02em;
   color: rgba(255, 255, 255, 0.7);
 }
 
@@ -171,6 +269,7 @@ button {
 
 .taste {
   margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 .taste-title,
@@ -182,20 +281,26 @@ button {
 .taste-title {
   text-transform: uppercase;
   max-width: 425px;
-  margin-bottom: 28px;
+  margin-bottom: 50px;
 }
+
 .taste-subtitle {
   font-size: 14px;
   line-height: 129%;
-  letter-spacing: -0.02em;
   color: #111;
   max-width: 486px;
   margin-bottom: 50px;
 }
 
 .taste-list {
+  display: flex;
+  gap: 19px;
 }
+
 .taste-list-item {
+  padding: 28px 36px 28px 28px;
+  border: 1px solid #fd9222;
+  border-radius: 15px;
 }
 .taste-list-item-image {
 }
@@ -203,12 +308,12 @@ button {
   font-weight: 600;
   font-size: 14px;
   line-height: 129%;
-  letter-spacing: -0.02em;
   text-transform: uppercase;
-  color: #111;
+  margin-top: 36px;
 }
 
-.list-item-milk {
+.list-item-milk,
+.button-primary {
   background-color: #fd9222;
 }
 
@@ -221,32 +326,54 @@ button {
 /*Recipe section star*/
 
 .recipe {
+  margin-bottom: 100px;
 }
-.recipe-title {
+
+.recipe-title,
+.review-title {
   font-weight: 600;
   font-size: 24px;
   line-height: 117%;
   letter-spacing: -0.03em;
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: 50px;
 }
+
+.recipe-content {
+  display: flex;
+}
+
+.recipe-content section {
+  padding: 32px;
+}
+
+.recipe-content img {
+  margin-right: 20px;
+}
+
 .recipe-image {
 }
+
 .recipe-subtitle {
-  font-weight: 600;
-  font-size: 18px;
   line-height: 133%;
-  color: #111;
+  margin-bottom: 28px;
 }
+
 .recipe-subtitle-list {
 }
+
 .recipe-subtitle-list-item {
+  padding-bottom: 24px;
 }
+
+.recipe-subtitle-list-item:last-child {
+  padding-bottom: 0;
+}
+
 .recipe-subtitle-list-item-text {
   font-size: 14px;
   line-height: 129%;
-  letter-spacing: -0.02em;
-  color: #111;
 }
 
 /*Recipe section end*/
@@ -257,39 +384,52 @@ button {
 }
 .review-title {
   font-weight: 600;
-  font-size: 24px;
-  line-height: 117%;
-  letter-spacing: -0.03em;
   text-transform: uppercase;
   text-align: center;
-}
-.review-list {
+  margin-bottom: 50px;
 }
 
-.review-button {
-  color: #111;
+.review-list {
+  display: flex;
+  gap: 28px;
+  align-items: center;
 }
+
 .review-list-item {
+  text-align: center;
+  width: 300px;
 }
+
 .review-list-item-image {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 18px;
 }
+
 .review-list-item-title {
-  font-weight: 600;
-  font-size: 18px;
   line-height: 133%;
   text-align: center;
   color: #111;
 }
+
 .review-list-item-subtitle {
   font-size: 14px;
   line-height: 129%;
-  letter-spacing: -0.02em;
   text-align: center;
   color: rgba(17, 17, 17, 0.7);
+  padding: 24px;
 }
+
 .review-button-secondary {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
 }
+
 .review-button {
+  color: #111;
+  border: 1px solid #fd9222;
+  text-align: center;
 }
 
 /*Review section end*/
@@ -299,39 +439,60 @@ button {
 .bottom {
   background-color: #1e1823;
 }
+
+.bottom-uper-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 0 0 32px;
+}
+
 .bottom-title {
   letter-spacing: -0.02em;
 }
+
 .bottom-contacts {
 }
+
 .bottom-contacts-title {
   font-weight: 500;
-
+  font-size: 14px;
   line-height: 129%;
 }
+
 .bottom-contacts-address {
 }
 .bottom-contacts-address-list {
 }
 .bottom-contacts-address-list-item {
   line-height: 129%;
-  letter-spacing: -0.02em;
+}
+
+.bottom-navigation-list {
+  display: flex;
+  gap: 24px;
+}
+
+.bottom-navigation-list-item-anchor {
+  font-weight: 500;
+  line-height: 114%;
 }
 
 .bottom-contacts-address-list-mail {
 }
+
+.bottom-menu-below {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+  padding-bottom: 50px;
+}
+
 .bottom-navigation {
 }
-.bottom-navigation-list {
-}
+
 .bottom-navigation-list-item {
 }
-.bottom-navigation-list-item-anchor {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 114%;
-  letter-spacing: -0.02em;
-}
+
 .bottom-subcribe {
 }
 .bottom-subcribe-email {
@@ -340,3 +501,192 @@ button {
 }
 
 /*Footer section end*/
+
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(17, 17, 17, 0.502);
+}
+
+.pop-up {
+  width: 517px;
+  height: 794px;
+  border-radius: 15px;
+  background-color: #fafafa;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  position: relative;
+}
+
+.pop-up-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 117%;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: var(--black);
+  width: 60%;
+  margin-bottom: 40px;
+}
+
+.pop-up-close-btn {
+  width: 5%;
+  align-self: flex-end;
+  border: none;
+  background-color: transparent;
+  font-size: 20px;
+  font-weight: 600;
+  position: absolute;
+  top: 24px;
+}
+
+.pop-up-field {
+  margin-bottom: 18px;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.pop-up-field label {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  color: rgba(64, 64, 64, 0.3);
+  margin-bottom: 8px;
+}
+
+.pop-up-field-input,
+.pop-up-field-comment {
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  border-radius: 13px;
+  box-sizing: border-box;
+}
+
+.pop-up-field-input {
+  padding: 22px 24px 22px 55px;
+}
+
+.pop-up-field:hover .pop-up-svg,
+.pop-up-field:hover .pop-up-field-input,
+.pop-up-field:hover .pop-up-field-input::placeholder {
+  border-color: #fd9222;
+  stroke: #fd9222;
+}
+
+.pop-up-field-input:focus-visible,
+.pop-up-field:hover .pop-up-svg,
+.pop-up-field-input:focus-visible .pop-up-field-input::placeholder {
+  border-color: #fd9222;
+  stroke: #fd9222;
+  outline: none;
+}
+
+.pop-up-field:focus-within .pop-up-svg,
+.pop-up-field:focus-within .pop-up-field-input::placeholder {
+  stroke: #fd9222;
+  color: #fd9222;
+}
+
+.pop-up-svg {
+  position: absolute;
+  top: 48px;
+  left: 28px;
+}
+
+.button-pop-up {
+  width: 7%;
+  box-sizing: content-box;
+}
+
+.pop-up-field-comment {
+  resize: none;
+  width: auto;
+}
+.pop-up-field-comment::placeholder {
+  padding-top: 22px;
+  padding-left: 24px;
+}
+
+.pop-up-field-comment::placeholder,
+.pop-up-field-input::placeholder {
+  color: rgba(64, 64, 64, 0.3);
+}
+
+.privacy {
+  color: rgba(64, 64, 64, 0.6);
+  position: relative;
+}
+
+.privacy-link {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* Custom checkbox */
+
+.privacy {
+  position: relative;
+}
+
+/* Hide the browser's default checkbox */
+.privacy input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+  border: 1px solid rgba(17, 17, 17, 0.14);
+  border-radius: 6px;
+}
+
+.checkbox-text {
+  margin-left: 32px;
+}
+
+/* When the checkbox is checked, add a blue background */
+.privacy input:checked ~ .checkmark {
+  background-color: #fd9222;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.privacy input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.privacy .checkmark:after {
+  left: 6px;
+  top: 2px;
+  width: 5px;
+  height: 9px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}

@@ -12,18 +12,37 @@
   <body>
     <header class="header" id="top">
       <div class="container">
-      <nav class="header-navigation">
-        <a class="header-navigation-logo first-logo" href="#">
-         <span class="header-navigation-logo-italic">Simply</span> chokolate
-          <img src="./images/Vector.svg" alt="Chocolate" >
-        </a>
-        <ul>
-          <li><a href="#top">Home</a></li>
-          <li><a href="#recipe">How it’s made?</a></li>
-          <li><a href="#review">Chocolate is loved</a></li>
+      
+        <nav class="header-navigation">
+          <div class="header-navigation-direction">
+          <div class="header-navigation-logo">
+            <img class="choko-logo" 
+            src="./images/Vector.svg" 
+            alt="Chocolate" >
+            <a class="first-logo" href="#">
+             <span class="header-navigation-logo-italic">
+              Simply</span> chokolate
+            
+            </a>
+          </div>
+          <ul class="header-navigation-menu">
+            <li><a href="#top">Home</a></li>
+            <li><a href="#recipe">How it’s made?</a></li>
+            <li><a href="#review">Chocolate is loved</a></li>
+          </ul>
+          <ul class="header-navigation-social">
+            <li> <a href="https://www.instagram.com/"
+                    rel="noopener noreferrer"
+                    target="_blank"><img
+                        src="./images/instagram.svg"
+                        alt="Instagram"></a></li>
+            <li> <a href="https://x.com/"
+                    rel="noopener noreferrer"
+                    target="_blank"><img
+                        src="./images/twitter.svg"
+                        alt="Twitter"></a></li>
         </ul>
-        <a href="https://www.instagram.com/" rel="noopener noreferrer" target="_blank"><img src="./images/instagram.svg" alt="Instagram" /></a>
-      <a href="https://x.com/" rel="noopener noreferrer" target="_blank"><img src="./images/twitter.svg" alt="twitter" /></a>
+      </div>
       </nav>
     </div>
     </header>
@@ -35,16 +54,21 @@
           Treat yourself or a loved one to our finest ingredients for a moment
           of pure delight!
         </h1>
-        <button type="button" class="button-primary">Buy now</button>
-        <button type="button" class="button-secondary">How it’s made</button>
-        <a href="#bottom" 
-        class="hero-banner-button-scroll"
-          >scroll down
-          <img
-           src="./images/scroll.svg" 
-           class="hero-banner-button-scroll-image"
-            alt="scroll">
-        </a>
+       <div class="hero-banner-content-buttons">
+          <div>
+            <button type="button" class="button-primary">Buy now</button>
+            <button type="button" class="button-secondary">How it’s made</button>
+          </div>
+          <a href="#bottom" 
+          class="hero-banner-button-scroll"
+            ><span>scroll down</span>
+         
+            <img
+             src="./images/scroll.svg" 
+             class="hero-banner-button-scroll-image"
+              alt="scroll">
+            </a>
+       </div>
       </div>
       </section>
     </div>
@@ -89,8 +113,7 @@
       src="./images/choko bur.png" 
       alt="choko bur"
       width="206" 
-      height="160" 
-      class="taste-list-item-image">
+      height="160">
       <p class="taste-list-item-text white-text">Milk chocolate</p>
     </li>
     <li class="taste-list-item">
@@ -98,16 +121,14 @@
       src="./images/milk-bottle.png" 
       alt="milk-bottle"
       width="206"
-      height="160" 
-      class="taste-list-item-image">
+      height="160">
       <p class="taste-list-item-text">Milk bottle</p>
     </li>
     <li class="taste-list-item list-item-nuts">
       <img src="./images/nuts.png" 
       alt="nuts" 
       width="206" 
-      height="160" 
-      class="taste-list-item-image">
+      height="160">
       <p class="taste-list-item-text white-text">Nuts</p>
     </li>
     <li class="taste-list-item">
@@ -115,8 +136,7 @@
       src="./images/small-chokolate.png" 
       alt="small-chokolate" 
       width="206"
-      height="160" 
-      class="taste-list-item-image">
+      height="160">
       <p class="taste-list-item-text">Semi-sweet chocolate</p>
     </li>
   </ul>
@@ -125,30 +145,32 @@
       <div class="container">
         <section class="recipe" id="recipe">
   <h2 class="recipe-title">How it’s <span class="taste-higlight">made?</span></h2>
-  <img src="./images/made.jpg" 
-  alt="how it`s made" 
-  width="600" 
-  height="400" class="recipe-image">
-  <section>
-    <h3 class="recipe-subtitle">Try  our chocolates today and discover the perfect balance of flavor</h3>
-    <ul class="recipe-subtitle-list">
-      <ul >
-      <li class="recipe-subtitle-list-item">
-      <p class="recipe-subtitle-list-item-text">Heat the milk in a saucepan without bringing it to a boil. Add sugar and cocoa powder.</p>
+  <div class="recipe-content">
+    <img src="./images/made.jpg" 
+    alt="how it`s made" 
+    width="600" 
+    height="400" class="recipe-image">
+    <section>
+      <h3 class="recipe-subtitle">Try  our chocolates today and <br> discover the perfect balance of flavor</h3>
+      <ul class="recipe-subtitle-list">
+        <ul >
+        <li class="recipe-subtitle-list-item">
+        <p class="recipe-subtitle-list-item-text">Heat the milk in a saucepan without bringing it to a boil. Add sugar and cocoa powder.</p>
+        </li>
+        <li class="recipe-subtitle-list-item">
+         <p class="recipe-subtitle-list-item-text">At the same time, prepare a water bath. Melt the butter on it.</p>
+        </li>
+        <li class="recipe-subtitle-list-item">
+         <p class="recipe-subtitle-list-item-text">"Mix" the milk mixture and already liquid butter. Mix thoroughly with a silicone spatula so that the mass becomes uniform and silky.</p>
+        </li>
+        <li class="recipe-subtitle-list-item">
+        <p class="recipe-subtitle-list-item-text"> Heat the mixture over low heat, letting it barely boil.</p>
       </li>
-      <li class="recipe-subtitle-list-item">
-       <p class="recipe-subtitle-list-item-text">At the same time, prepare a water bath. Melt the butter on it.</p>
+        <li class="recipe-subtitle-list-item">
+        <p class="recipe-subtitle-list-item-text"> Pour the chocolate into special containers (can be replaced with ice molds). Allow to cool and harden.</p>
       </li>
-      <li class="recipe-subtitle-list-item">
-       <p class="recipe-subtitle-list-item-text">"Mix" the milk mixture and already liquid butter. Mix thoroughly with a silicone spatula so that the mass becomes uniform and silky.</p>
-      </li>
-      <li class="recipe-subtitle-list-item">
-      <p class="recipe-subtitle-list-item-text"> Heat the mixture over low heat, letting it barely boil.</p>
-    </li>
-      <li class="recipe-subtitle-list-item">
-      <p class="recipe-subtitle-list-item-text"> Pour the chocolate into special containers (can be replaced with ice molds). Allow to cool and harden.</p>
-    </li>
-    </ul>
+      </ul>
+  </div>
   </section>
   
         </section>
@@ -190,54 +212,111 @@
                   <p class="review-list-item-subtitle"> Chocolate is a family favourite treat. Love the delicious smooth chocolate and the creaminess inside. The wafer is soft but crunchy.</p>
               </li>
           </ul>
-          <button
-            type="button"
-            class="button-secondary review-button">
-            Leave  a review
-          </button>
+        <div class="review-button-secondary">
+            <button
+              type="button"
+              class="button-secondary review-button">
+              Leave  a review
+            </button>
+        </div>
         </section>
      </div>
     </main>
     <footer class="bottom" id="bottom">
       <div class="container">
-          <h2 class="bottom-title"><span class="taste-higlight">Chocolate</span> a delicious cure for a bad day</h2>
-          <section class="bottom-contacts">
-          <p class="bottom-contacts-title">Contact us</p>
-          <address class="bottom-contacts-address">
-              <ul class="bottom-contacts-address-list">
-                <li
-                 class="bottom-contacts-address-list-item">
-                 <a href="tel:+380 (68) 443-94-26"
-                   class="bottom-contacts-address-list-number">+380 (68) 443-94-26</a>
-                  </li>
-                <li
-                 class="bottom-contacts-address-list-item">
-                 <a href="mailto:simplychoc@gmail.com"
-                   class="bottom-contacts-address-list-mail">simplychoc@gmail.com</a>
-                  </li>
-              </ul>
-          </address>
-        </section>
-          <hr>
-          <nav class="bottom-navigation">
-              <ul class="bottom-navigation-list">
-                <li class="bottom-navigation-list-item">
-                  <a href="#top" class="bottom-navigation-list-item-anchor">Home</a>
-                </li>
-                <li class="bottom-navigation-list-item">
-                  <a href="#how-its-made" class="bottom-navigation-list-item-anchor">How it’s made?</a>
-                </li>
-                <li class="bottom-navigation-list-item">
-                  <a href="#review" class="bottom-navigation-list-item-anchor">Chocolate is loved</a>
-                </li>
+    <div class="bottom-uper-content">
+            <h2 class="bottom-title"><span class="taste-higlight">Chocolate</span> a delicious <br> cure for a bad day</h2>
+            <section class="bottom-contacts">
+            <p class="bottom-contacts-title">Contact us</p>
+            <address class="bottom-contacts-address">
+                <ul class="bottom-contacts-address-list">
+                  <li
+                   class="bottom-contacts-address-list-item">
+                   <a href="tel:+380 (68) 443-94-26"
+                     class="bottom-contacts-address-list-number">+380 (68) 443-94-26</a>
+                    </li>
+                  <li
+                   class="bottom-contacts-address-list-item">
+                   <a href="mailto:simplychoc@gmail.com"
+                     class="bottom-contacts-address-list-mail">simplychoc@gmail.com</a>
+                    </li>
                 </ul>
-          </nav>
-          <form class="bottom-subcribe">
-              <input type="text" placeholder="Enter your email" class="bottom-subcribe-email">
-              <button type="submit" class="bottom-subcribe-submit button-primary">Subscribe</button>
-          </form>
+            </address>
+          </section>
+    </div>
+          <hr>
+      <div class="bottom-menu-below">
+            <nav class="bottom-navigation">
+                <ul class="bottom-navigation-list">
+                  <li class="bottom-navigation-list-item">
+                    <a href="#top" class="bottom-navigation-list-item-anchor">Home</a>
+                  </li>
+                  <li class="bottom-navigation-list-item">
+                    <a href="#how-its-made" class="bottom-navigation-list-item-anchor">How it’s made?</a>
+                  </li>
+                  <li class="bottom-navigation-list-item">
+                    <a href="#review" class="bottom-navigation-list-item-anchor">Chocolate is loved</a>
+                  </li>
+                  </ul>
+            </nav>
+            <form class="bottom-subcribe">
+                <input type="text" placeholder="Your email" class="bottom-subcribe-email">
+                <button type="submit" 
+                class="bottom-subcribe-submit button-primary">Subscribe</button>
+            </form>
+      </div>
       </div>
         
     </footer>
+
+    <div class="overlay">
+      <form class="pop-up">
+        <button type="button" class="pop-up-close-btn">x</button>
+        <p class="pop-up-title">Leave a review about <span class="taste-higlight">our chocolate</span></p>
+     
+        <fieldset class="pop-up-field">
+          <label for="name">Name</label>
+            <svg class="pop-up-svg social-icons" width="24px" height="24px">
+              <use href="./images/symbol-defs.svg#icon-user"></use>
+            </svg>
+              <input type="text" name="name" placeholder="Your name" class="pop-up-field-input">
+        </fieldset>
+  
+      <fieldset class="pop-up-field">
+        <label for="email">Email</label>
+          <svg class="pop-up-svg social-icons" width="24px" height="24px">
+            <use href="./images/symbol-defs.svg#icon-mail"></use>
+          </svg>
+          <input type="email" name="email" placeholder="Your email" class="pop-up-field-input email">
+        </fieldset>
+  
+      <fieldset class="pop-up-field">
+        <label for="telephone">Phone number</label>
+          <svg class="pop-up-svg social-icons" width="24px" height="24px">
+            <use href="./images/symbol-defs.svg#icon-phone"></use>
+          </svg>
+          <input type="tel" name="telephone" placeholder="Your telephone" class="pop-up-field-input number">
+        </fieldset>
+  
+    <fieldset class="pop-up-field">
+        <label for="comment">Comment</label>
+          <textarea name="comment" rows="10" placeholder="Enter text" class="pop-up-field-comment"></textarea>
+    </fieldset>
+
+  <div>
+    <fieldset class="pop-up-field">
+      <label class="privacy">
+      <input type="checkbox" checked="checked">
+      <span class="checkmark"></span>
+     <p class="checkbox-text">
+        I accept the terms and conditions of the 
+          <span class="taste-higlight privacy-link">Privacy Policy</span>
+     </p></label>
+  </div>  
+  </fieldset>
+  
+      <button type="submit" class="button-subckribe-submit button-primary button-pop-up">Send</button>
+      </form> 
+    </div>
   </body>
 </html>
